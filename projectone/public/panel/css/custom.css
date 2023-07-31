@@ -1,0 +1,33 @@
+/* أسلوب الواجهة التنبثقية */
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -300px; /* تحديد البداية من الجانب الأيمن خارج الشاشة */
+    width: 300px;
+    height: 100vh;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+
+
+}
+
+.header_ {
+
+}
+
+/* أسلوب زر فتح الواجهة التنبثقية */
+.open-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* أسلوب زر فتح الواجهة عندما تكون مفتوحة */
+.open-btn.opened {
+    right: 320px; /* يتحرك الزر إلى اليمين لتفادي تغطية الواجهة التنبثقية */
+}
+
+.side-panel.opened {
+    right: 0px;
+}
